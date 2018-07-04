@@ -1,0 +1,26 @@
+{
+  "name": "urijs-all",
+  "version": "0.1.0",
+  "repository": "https://github.com/spiralx/urijs-all",
+  "description": "Generate a single script with URI.js and extensions combined",
+  "author": "James Skinner <spiralx@gmail.com> (https://github.com/spiralx)",
+  "license": "MIT",
+  "keywords": [
+    "URI.js",
+    "URI",
+    "punycode",
+    "SecondLevelDomains",
+    "IPv6"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/urijs-all.js",
+  "module": "dist/urijs-all.mjs",
+  "browser": "dist/urijs-all.umd.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rollup -c rollup.build.config.js",
+    "start": "rollup -c -w"
+  }
+}
